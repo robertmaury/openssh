@@ -9,8 +9,8 @@ class openssh {
     owner   => root,
     group   => root,
     mode    => 0644,
-    #source  => 'puppet:///modules/openssh/sshd_config',
-    content => template("openssh/sshd_config.erb")
+    source  => 'puppet:///modules/openssh/sshd_config',
+    #content => template("openssh/sshd_config.erb")
     require => Package['openssh-server']
   }
 
