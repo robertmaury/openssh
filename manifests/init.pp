@@ -1,5 +1,3 @@
-# Installs and manages the openssh service
-
 class openssh {
   
   package {'openssh-server':
