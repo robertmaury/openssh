@@ -1,6 +1,6 @@
 # Installs and manages the openssh service
 
-class openssh::openssh {
+class openssh {
   
   package {'openssh-server':
     ensure => '5.3p1-94',
