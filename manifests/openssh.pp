@@ -1,3 +1,5 @@
+# Installs and manages the openssh service
+
 class openssh::openssh {
   
   package {'openssh-server':
@@ -8,7 +10,7 @@ class openssh::openssh {
     ensure  => file,
     owner   => root,
     group   => root,
-    mode    => 0644,
+    mode    => '644',
     source  => 'puppet:///modules/openssh/sshd_config',
     #content => template("openssh/sshd_config.erb")
     require => Package['openssh-server']
