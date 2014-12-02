@@ -9,8 +9,6 @@ namespace :lint do
       fail 'Cannot load puppet-lint, did you install it?'
     end
 
-    PuppetLint.configuration.send('disable_autoloader_layout')
- 
     success = true
  
     linter = PuppetLint.new
