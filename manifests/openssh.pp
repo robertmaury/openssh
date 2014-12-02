@@ -1,4 +1,4 @@
-class openssh {
+class openssh::openssh {
   
   package {'openssh-server':
     ensure => '5.3p1-94',
